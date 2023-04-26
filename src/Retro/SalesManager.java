@@ -19,16 +19,16 @@ public class SalesManager {
         return max;
     }
 
-    public int average() {
-        int[] sales2 = sales.clone();
+    public long average() {
+        long[] sales2 = sales.clone();
         Arrays.sort(sales2);
-        int min = sales2[0];
-        int max = sales2[sales2.length - 1];
-        int sum = 0;
-        int average = 0;
+        long min = sales2[0];
+        long max = sales2[sales2.length - 1];
+        long sum = 0;
+        long average = 0;
         for (int i = 0; i < sales2.length; i++) {
             sum = sum + sales2[i];
-            int sum2 = sum - min - max;
+            long sum2 = sum - min - max;
             average = sum2 / (sales2.length - 2);
         }
         return average;

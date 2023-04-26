@@ -10,7 +10,7 @@ public class Main {
         long x = salesManager.max();
         System.out.println("Максимальная выручка:" + x);
 
-        int y = salesManager.average();
+        long y = salesManager.average();
         System.out.println("Обрезанная средняя выручка:" + y);
     }
 }
