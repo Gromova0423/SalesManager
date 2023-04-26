@@ -9,5 +9,8 @@ public class Main {
         SalesManager salesManager = new SalesManager(RetroSales);
         int x = salesManager.max();
         System.out.println("Максимальная выручка:" + x);
+
+        int y = salesManager.average();
+        System.out.println("Обрезанная средняя выручка:" + y);
     }
 }
